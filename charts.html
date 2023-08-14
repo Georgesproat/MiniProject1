@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Charts</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">IMDB Top 250 Movies</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="placeholder1.html">Placeholder 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="placeholder2.html">Placeholder 2</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container custom-mt-7">
+      <div class="row">
+        <div class="col-md-12">
+          <div
+            id="releaseYearDistributionChartContainer"
+            style="height: 500px"
+          ></div>
+        </div>
+      </div>
+      <div class="row custom-mt-7">
+        <div class="col-md-12">
+          <div id="genreDistributionChartContainer" style="height: 500px"></div>
+        </div>
+      </div>
+      <div class="row custom-mt-7">
+        <div class="col-md-12">
+          <div id="topDirectorsChartContainer" style="height: 500px"></div>
+        </div>
+      </div>
+      <div class="row custom-mt-7">
+        <div class="col-md-12">
+          <div id="topActorsChartContainer" style="height: 500px"></div>
+        </div>
+      </div>
+      <div class="row custom-mt-7">
+        <div class="col-md-12">
+          <div id="ratingOverYearsChartContainer" style="height: 500px"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <script src="charts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top 250 IMDB Movies</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">IMDB Top 250 Movies</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="charts.html">Charts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="placeholder1.html">Placeholder 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="placeholder2.html">Placeholder 2</a>
+            </li>
+            <li class="nav-item">
+              <input
+                type="text"
+                id="searchInput"
+                class="form-control"
+                placeholder="Search..."
+              />
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="sortingDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Sort by
+              </a>
+              <div class="dropdown-menu" aria-labelledby="sortingDropdown">
+                <a class="dropdown-item" href="#" id="sortByTitle">Title</a>
+                <a class="dropdown-item" href="#" id="sortByYear">Year</a>
+                <a class="dropdown-item" href="#" id="sortByRating">Rating</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <div class="row" id="movieList"></div>
+      <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center mt-4" id="pagination"></ul>
+      </nav>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+
+body {
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
+
+.navbar {
+  background-color: #333333;
+}
+
+.navbar-brand {
+  color: #ffff00;
+  font-size: 24px;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #ffff00;
+}
+
+#searchInput {
+  background-color: #333333;
+  border-color: #ffff00;
+  color: #ffffff;
+}
+
+.dropdown-item {
+  color: #333333;
+}
+
+.card {
+  background-color: #444444;
+  border-color: #ffff00;
+}
+
+.card-title {
+  color: #ffff00;
+}
+
+.card-text {
+  color: #ffffff;
+}
+
+.page-link {
+  background-color: #333333;
+  border-color: #ffff00;
+  color: #ffffff;
+}
+
+.page-item.active .page-link {
+  background-color: #ffff00;
+  border-color: #ffff00;
+  color: #333333;
+}
+
+.custom-mt-7 {
+  margin-top: 5rem;
+  margin-bottom: 5rem; 
+}
+
+
+
+
