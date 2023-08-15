@@ -17,45 +17,34 @@
         <a class="navbar-brand" href="#">IMDB Top 250 Movies</a>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-             <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="charts.html">Charts</a>
+              <a class="nav-link" href="charts.html">Charts</a></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="random.html">Random</a>
-            </li>
-            <li class="nav-item">
-              <input
-                type="text"
-                id="searchInput"
-                class="form-control"
-                placeholder="Search..."
-              />
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="sortingDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Sort by
-              </a>
-              <div class="dropdown-menu" aria-labelledby="sortingDropdown">
-                <a class="dropdown-item" href="#" id="sortByTitle">Title</a>
-                <a class="dropdown-item" href="#" id="sortByYear">Year</a>
-                <a class="dropdown-item" href="#" id="sortByRating">Rating</a>
-              </div>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <div class="container mt-2">
+  <div class="row">
+    <div class="col-md-4">
+      <label for="genreSelect">Select a Genre:</label>
+      <select id="genreSelect" class="form-control">
+        <option value="Action">Action</option>
+        <option value="Drama">Drama</option>
+        <option value="Comedy">Comedy</option>
+      </select>
+    </div>
+    <div class="col-md-4 align-self-center">
+      <button id="generateRandomMovie" class="btn btn-primary">Generate Random Movie</button>
+
+    </div>
+  </div>
     <div class="container mt-5">
       <div class="row" id="movieList"></div>
       <nav aria-label="Page navigation">
@@ -68,6 +57,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
 
+    
     <script src="script.js"></script>
+    <script src="random.js"></script>
   </body>
 </html>
