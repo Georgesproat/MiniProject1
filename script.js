@@ -184,7 +184,7 @@ fetchAndRenderMovies();
 
 // // Render movies with pagination
 function renderMovies(movieData) {
-  movieListElement.innerHTML = ""; // Clear previous content
+  movieListElement.innerHTML = ""; 
   const startIndex = (currentPage - 1) * moviesPerPage;
   let endIndex = startIndex + moviesPerPage;
   if (endIndex > movieData.length) {
